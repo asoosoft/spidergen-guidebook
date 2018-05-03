@@ -2,7 +2,9 @@
 
 ---
 
-> Download : [http://manual.spidergen.org/example/SG012.zip](http://manual.spidergen.org/example/SG002.zip)
+> Download1 : h[ttp://manual.spidergen.org/example/SG012.zip](http://manual.spidergen.org/example/SG012.zip)
+>
+> Download2 :[ http://manual.spidergen.org/example/WindowSample.zip](http://manual.spidergen.org/example/WindowSample.zip)
 
 프레임 윈도우 사용 방법은 앞에서 설명한 윈도우 사용방법과 동일하며 단지 생성하는 방법에서만 차이점이 있습니다.
 
@@ -22,8 +24,6 @@
    * 상단의 프레임 부분을 마우스 우측 버튼을 누른 상태에서 이동해 봅니다. 윈도우가 움직임에 따라 이동하는걸 확인합니다.
    * 또 프레임 우측에 최소, 최대, 닫기 버튼을 클릭해 각각의 기능을 확인합니다.
    * ![](/assets/win-ex-014.png)
-
-
 
 
 

@@ -1,5 +1,7 @@
 # 6.1.1 ALabel Appearance
 
+---
+
 Label 속성입니다. 글로벌 속성은[ **5. 글로벌 속성**](/ae00-b85c-bc8c-c18d-c131.md)을 참고해주세요.
 
 ![](/assets/label-appearance-data.png)

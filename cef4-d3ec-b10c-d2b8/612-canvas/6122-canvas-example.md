@@ -1,8 +1,10 @@
-# 6.12.2. Canvas Example
+# 6.12.2. View Example
 
 ---
 
-> Download : [http://manual.spidergen.org/example/SG004.zip](http://manual.spidergen.org/example/SG002.zip)
+> Download1 : [http://manual.spidergen.org/example/SG004.zip](http://manual.spidergen.org/example/SG004.zip)
+>
+> Download2 : [http://manual.spidergen.org/example/ViewSample.zip](http://manual.spidergen.org/example/ViewSample.zip)
 
 1. 새 프로젝트를 생성합니다. 프로젝트명은 SG004 입니다.
 2. 뷰를 하나 추가합니다. MainView 이름으로 메인뷰를 추가합니다.
@@ -51,17 +53,19 @@
      > };
      > ```
 
-7. 이번에는 MainView에 컴포넌트를 다음과 같이 배치합니다.
+7. 이번에는 MainView에 다음 내용을 참고해서 컴포넌트를 배치합니다.
 
-   * 메인뷰 안에 컴포넌트뷰 view01, view02를 추가합니다. 이뷰들은 각각 서브뷰 T001, T002를 로드하여 보여주는 역할을 합니다.
-   * | component | id | position | size | text |
-     | :--- | :--- | :--- | :--- | :--- |
-     | AButton | btnLoad | right:20px, top:10px | width:80px, height:20px | load view |
-     | AView | view01 | left:20px, top:50px | width:400px, height:200px |  |
-     | AView | view02 | left:20px, top:270px | width:400px, height:200px |  |
-   * ![](/assets/view-ex-009.png)
+   * 메인뷰 안에 컴포넌트뷰 view01, view02를 추가합니다. 이 뷰들은 각각 서브뷰 T001, T002를 로드하여 보여주는 역할을 합니다.
 
-8. 버튼에 Click 이벤트를 설정 합니다. 설정 함수는 다음과 같은 내용으로 수정합니다.
+| component | id | position | size | text |
+| :--- | :--- | :--- | :--- | :--- |
+| AButton | btnLoad | right:20px, top:10px | width:80px, height:20px | load view |
+| AView | view01 | left:20px, top:50px | width:400px, height:200px | - |
+| AView | view02 | left:20px, top:270px | width:400px, height:200px | - |
+
+![](/assets/view-ex-009.png)
+
+1. 버튼에 Click 이벤트를 설정 합니다. 설정 함수는 다음과 같은 내용으로 수정합니다.
 
    * > ```js
      > function MainView:onBtnLoadClick(comp, info, e)
@@ -74,13 +78,11 @@
      > };
      > ```
 
-9. 프로젝트를 빌드하고 실행합니다.
+2. 프로젝트를 빌드하고 실행합니다.
 
    * Load View 버튼을 클릭합니다. MainView에 뷰 T001, T002가 로드 되는걸 확인합니다.
    * 로드된 각 T001, T002뷰에 버튼을 클릭해서 출력되는 메시지를 확인합니다.
    * ![](/assets/view-ex-005.png)
-
-
 
 
 

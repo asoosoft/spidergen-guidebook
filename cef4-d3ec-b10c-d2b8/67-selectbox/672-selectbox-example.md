@@ -25,14 +25,17 @@
      >
      > };
      > ```
-4. V003.lay 파일을 오픈하고 다음과 같이 컴포넌트를 배치합니다.
-   * | component | id | position | size | text |
-     | :--- | :--- | :--- | :--- | :--- |
-     | ALabel | lbl001 | left:50px, top:30px | width:auto, height:20px | 체크값 |
-     | ASelectBox | select1 | left:50px, top : 60px | width:140px, height:20px |  |
-     | ASelectBox | select2 | left:50px, top:90px | width:140px, height:22px |  |
-   * ![](/assets/selectbox-ex-003.png)
-5. V003.cls 파일을 오픈하고 내용을 아래와 같이 수정합니다.
+4. V003.lay 파일을 오픈하고 다름과 같이 컴포넌트를 배치합니다.
+
+| component | id | position | size | text |
+| :--- | :--- | :--- | :--- | :--- |
+| ALabel | lbl001 | left:50px, top:30px | width:auto, height:20px | 체크값 |
+| ASelectBox | select1 | left:50px, top:60px | width:140px, height:20px | - |
+| ASelectBox | select2 | left:50px, top:90px | width:140px, height:22px | - |
+
+![](/assets/selectbox-ex-003.png)
+
+1. V003.cls 파일을 오픈하고 내용을 아래와 같이 수정합니다.
 
    * V003  클래스 함수에 멤버변수 data를 생성합니다.
    * > ```js
@@ -140,10 +143,8 @@
      > };
      > ```
 
-6. F5 키를 이용해서 프로젝트를 빌드하고 실행합니다.  
+2. F5 키를 이용해서 프로젝트를 빌드하고 실행합니다.  
    ![](/assets/selectbox-ex-005.png)
-
-
 
 
 

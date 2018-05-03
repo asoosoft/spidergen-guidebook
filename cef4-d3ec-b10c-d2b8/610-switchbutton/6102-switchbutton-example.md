@@ -2,7 +2,7 @@
 
 ---
 
-> Download : [http://manual.spidergen.org/example/SG003.zip](http://manual.spidergen.org/example/SG002.zip)
+> Download : [http://manual.spidergen.org/example/SG003.zip](http://manual.spidergen.org/example/SG003.zip)
 
 1. 기존 프로젝트 SG003을 로드합니다.
 2. M002 이름으로 뷰를 추가합니다. 
@@ -20,15 +20,18 @@
      > };
      > ```
 4. M002.lay 파일을 오픈하고 아래 내용으로 컴포넌트를 배치합니다.
-   * | component | id | position | size | text |
-     | :--- | :--- | :--- | :--- | :--- |
-     | ALabel |  | left:30px, top:40px | width:auto, height:auto | 이용약관 |
-     | ALabel |  | left:30px, top:180px; | width:auto, height:20px | 이용약관에 동의하십니까? |
-     | ASwitchButton | switch | left:200px, top:180px | width:35px, height:20px |  |
-     | ATextBox |  | left:30px, top:70px | width:320px, height:100px | 기본내용 |
-     | AButton | btnOk | left:80px, top:230px | width:220px, height:33px | 확인 |
-   * ![](/assets/switchbutton-ex-03.png)
-5. 확인 버튼에 Click 이벤트 설정하고  설정한 함수 내용은 아래과 같이 수정합니다.
+
+| component | id | position | size | text |
+| :--- | :--- | :--- | :--- | :--- |
+| ALabel |  | left:30px, top:40px | width:auto, height:auto | 이용약관 |
+| ALabel |  | left:30px, top:180px | width:auto, height:20px | 이용약관에 동의하십니까? |
+| ASwitchButton | switch | left:200px, top:180px | width:35px, height:20px |  |
+| ATextBox |  | left:30px, top:70px | width:320px, height:100px | 기본내용 |
+| AButton | btnOk | left:80px, top:230px | left:220px, height:33px | 확인 |
+
+![](/assets/switchbutton-ex-03.png)
+
+1. 확인 버튼에 Click 이벤트 설정하고  설정한 함수 내용은 아래과 같이 수정합니다.
    * > ```js
      > function M002:onBtnOkClick(comp, info, e)
      > {
@@ -45,12 +48,10 @@
      >
      > };
      > ```
-6. F5키를 이용해서 빌드하고 실행 합니다.
+2. F5키를 이용해서 빌드하고 실행 합니다.
    * ![](/assets/switchbtn-ex-004.png)
    * 스위치 버튼을 좌측 스위치 상태에서 확인버튼 클릭 메시지 확인. 우측상태로 스위칭하고 확인버튼 클릭 메시지를 확인합니다.
    * ![](/assets/switchbtn-ex-006.png)
-
-
 
 
 

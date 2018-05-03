@@ -2,6 +2,10 @@
 
 ---
 
+> Download : [http://manual.spidergen.org/example/SG001.zip](http://manual.spidergen.org/example/SG001.zip)
+>
+> youtube : [https://youtu.be/\_\_N9J3ial0U](https://youtu.be/__N9J3ial0U)
+
 1. 레이블 테스트를 위한 프로젝트를 오픈합니다.
 
    * File &gt; Open Project 클릭
@@ -46,6 +50,4 @@
    ![](/assets/btn-ex010.png)
 
 
-
-Download : [http://manual.spidergen.org/example/SG001.zip](http://manual.spidergen.org/example/SG001.zip)
 

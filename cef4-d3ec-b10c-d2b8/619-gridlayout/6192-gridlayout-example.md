@@ -2,7 +2,7 @@
 
 ---
 
-> Download : [http://manual.spidergen.org/example/SG009.zip](http://manual.spidergen.org/example/SG002.zip)
+> Download : [http://manual.spidergen.org/example/SG009.zip](http://manual.spidergen.org/example/SG009.zip)
 
 ##### 
 
@@ -38,23 +38,28 @@
 7. 레이아웃이 5개의 영역으로 구분 되었습니다.
 8. 1행 병합된 Cell 에 AView 를 드래그앤 드롭으로 추가합니다. 그리고 Palcement &gt; Align - View Based &gt; Fill Parent 적용해서 Cell안에 View 가득 차도록 합니다.
    * ![](/assets/gridlayout-ex-011.png)
-9. 병합된  Cell 내의 AView에 다음 내용을 참고해 컴포넌트를 배치합니다.
-   * | component | id | position | size | text |
-     | :--- | :--- | :--- | :--- | :--- |
-     | ALabel |  | left:10px, top:26px | width:auto, height:auto | 검색 |
-     | ATextField |  | left:40px, top:24px | w stretch:100px, height:22px |  |
-     | AButton |  | right:10px, top:24px | width:80px, height:22px | 검색 |
-   * 세로 중간에 위 3개의 컴포넌트가 위치하게 하기 위해 3개의 컴포넌트를 모두 선택\(Ctrl + 선택객체\) 하고 Placement &gt; Align-View Based &gt; Middle 을 선택합니다.
-     * ![](/assets/gridlayout-ex-010.png)
-   * ![](/assets/gridlayout-ex-009.png)
-10. 고정된 영역에 AView를 추가하고 앞 8번과 같이 추가한 뷰가 셀에 가득차게 하고 각 뷰의 컬러를 연두, 파랑, 노랑 색으로 설정합니다.
-    * ![](/assets/gridlayout-ex-016.png)
-11. F5 키를 이용해서 프로젝트를 빌드하고 실행합니다.
+9. 병합된 Cell 내의 AView에 다음 내용을 참고해 컴포넌트를 배치합니다.
 
-    * 시뮬레이터의 창 사이즈를 줄이거나 늘려 봅니다.
-    * 고정 영역\(배경컬러가 있는 영역\)이 유지 되면서 유동적으로 레이아웃이 변경되는 걸 확인합니다.  
-      * ![](/assets/gridlayout-ex018.png)  
-      * ![](/assets/gridlayout-ex-019.png)
+| compoonent | position | size | text |
+| :--- | :--- | :--- | :--- |
+| ALabel | left:10px, top:26px | width:auto, height:auto | 검색 |
+| ATextField | left:40px, top:24px | w-stretch:100px, height:22px |  |
+| AButton | right:10px, top:24px | width:80px, height:22px | 검색 |
+
+* 세로 중간에 위 3개의 컴포넌트가 위치하게 하기 위해 3개의 컴포넌트를 모두 선택\(Ctrl + 선택객체\) 하고 Placement &gt; Align-View Based &gt; Middle 을 선택합니다.
+  * ![](/assets/gridlayout-ex-010.png)
+* ![](/assets/gridlayout-ex-009.png)
+
+* 고정된 영역에 AView를 추가하고 앞 8번과 같이 추가한 뷰가 셀에 가득차게 하고 각 뷰의 컬러를 연두, 파랑, 노랑 색으로 설정합니다.
+
+  * ![](/assets/gridlayout-ex-016.png)
+
+* F5 키를 이용해서 프로젝트를 빌드하고 실행합니다.
+
+  * 시뮬레이터의 창 사이즈를 줄이거나 늘려 봅니다.
+  * 고정 영역\(배경컬러가 있는 영역\)이 유지 되면서 유동적으로 레이아웃이 변경되는 걸 확인합니다.  
+    * ![](/assets/gridlayout-ex018.png)  
+    * ![](/assets/gridlayout-ex-019.png)
 
 
 

@@ -2,6 +2,10 @@
 
 ---
 
+> Download : [http://manual.spidergen.org/example/SG001.zip](http://manual.spidergen.org/example/SG001.zip)
+>
+> youtube : [https://youtu.be/0vwcRziiinU](https://youtu.be/0vwcRziiinU)
+
 1. 새 프로젝트를 생성합니다.  
    1.1. File &gt; New Project 클릭합니다. 아래와 같은 프로젝트 생성 다이얼로그에서 Project Name은 SG001라 입력하고 Location은 프로젝트를 생성할 위치를 선택합니다. \(샘플에서는 C:\study 폴더를 선택했습니다.\)
 
@@ -88,8 +92,6 @@
 7. F5를 누르거나 Build &gt; Run Project 를 클릭하여 프로젝트를 Run 합니다.  
    레이블의 텍스트가 바뀌어서 출력되는것을 확인 할 수 있습니다.  
    ![](/assets/lable-ex-011.png)
-
-8. Download : [http://manual.spidergen.org/example/SG001.zip](http://manual.spidergen.org/example/SG001.zip)
 
 
 

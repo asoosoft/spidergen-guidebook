@@ -2,7 +2,9 @@
 
 ---
 
-> Download : [http://manual.spidergen.org/example/SG012.zip](http://manual.spidergen.org/example/SG002.zip)
+> Download1 : [http://manual.spidergen.org/example/SG012.zip](http://manual.spidergen.org/example/SG012.zip)
+>
+> Download2 :[ http://manual.spidergen.org/example/WindowSample.zip](http://manual.spidergen.org/example/WindowSample.zip)
 
 스파이더젠에서 제공하는 윈도우는 다양한 옵션을 설정해서 오픈 할 수 있습니다. 앞에서 예제로 보였던 Modal 윈도우도 내부적으로 이 옵션을 설정해서 오픈하는 방식입니다.
 
@@ -11,7 +13,7 @@
 | isModal | true | 모달 모드로 오픈 여부 |
 | isAutoCenter | false | 자동으로 뷰의 중앙 정렬 여부 |
 | isFocusLostClose | false | 모달인 경우 포커스를 잃을 때 윈도우를 닫을지 여부 |
-| isFocusLostHide | false | 모달인 겨우 포커스를 잃을 때 윈도우를 숨길지 여부 |
+| isFocusLostHide | false | 모달인 경우 포커스를 잃을 때 윈도우를 숨길지 여부 |
 | modalBgOption | dark \(none, light, dark\) | 모달 윈도우일 경우 배경색 어둡기 정도 |
 | overflow | hidden \(hidden, auto, visible, scroll\) |  |
 
@@ -37,8 +39,6 @@
      > ```
 2. 프로젝트를 빌드하고 실행합니다.
    * 각 옵션 값을 바꾸어가며 윈도우를 오픈해 봅니다. 윈도우 오픈 상태에서 변화를 확인하세요.
-
-
 
 
 
