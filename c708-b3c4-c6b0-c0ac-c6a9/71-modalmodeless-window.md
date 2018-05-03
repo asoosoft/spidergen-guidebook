@@ -1,0 +1,135 @@
+# 7.1. Modal/Modeless Window
+
+---
+
+> Download : [http://manual.spidergen.org/example/SG012.zip](http://manual.spidergen.org/example/SG002.zip)
+
+1. 새 프로젝트 SG012를 생성합니다.
+2. Source 폴더 내에 MainView를 생성합니다.
+3. SG012App.cls를 오픈하고 다음과 같이 싱글뷰 프로젝트로  진행하기 위해 내용을 수정합니다.
+   * > ```js
+     > function SG012App:onReady()
+     > {
+     >     super.onReady();
+     >
+     >     this.setMainContainer(new APage('main'));
+     >     this.mainContainer.open('Source/MainView.lay');
+     >
+     > };
+     > ```
+4. MainView.lay 파일을 오픈하고 다음 내용을 참고해서 컴포넌트를 배치합니다.
+   * | view | component | position | size | Data | text |
+     | :--- | :--- | :--- | :--- | :--- | :--- |
+     | AFlexLayout |  | left:10px, top:10px | width:300px, h-stretch : 10px | Direction : column, wrap:no wrap, H-Align:space type2, V-Align:center, Arrange Line: from top |  |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | Window Open \(modeless\) |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | Window Open \(Modal\) |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | Window Option |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | Full Size Window |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | Frame Window |
+     | AFlexLayout |  | left:0px, top:0px | width:250px, height:22px | Direction:row, Wrap :no wrap, H-Align:space type1, V-Align:top, Arrange Line : from top |  |
+     |  | AButton | left:0px, top:0px | width:auto, height:22px |  | Open |
+     |  | AButton | left:0px, top:0px | width:auto, height:22px |  | Hide |
+     |  | AButton | left:0px, top:0px | width:auto, height:22px |  | Show |
+     |  | AButton | left:0px, top:0px | width:auto, height:22px |  | Close |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | setResultCallback |
+     |  | AButton | left:0px, top:0px | width:250px, height:22px |  | setResultListener |
+     |  | AButton | right:20px, bottom:20px | width:100px, height:100px |  | 클릭해보세요. |
+   * 버튼의 배열을 위해서 FlexLayout 을 사용했습니다. 아래 이미지를 참고해서 컴포넌트의 위치 및 포함관계를 확인하세요.
+     * ![](/assets/win-ex-005.png)
+5. Source 폴더 아래 Views 폴더를 생성하고 윈도우의 View로 사용할 WinView를 추가합니다.
+
+   * WinView.lay를 오픈하고 배경색은 노란색으로 설정합니다.
+   * 상단 구석에 닫기라는 텍스트의 버튼 컴포넌트를 추가합니다.
+   * ![](/assets/win-ex-003.png)
+   * 닫기 버튼에 Click 이벤트를 설정하고 설정 함수는 다음과 같이 수정합니다.
+   * > ```js
+     > function WinView:onAButton1Click(comp, info, e)
+     > {
+     >     this.getContainer().close();
+     > };
+     > ```
+
+6. MainView에 "Window Open \(modeless\)" 버튼에 Click 이벤트를 설정하고 설정 함수는 다음과 같이 수정합니다.
+
+   * > ```js
+     > //Window Open (modeless)
+     > function MainView:onAButton1Click(comp, info, e)
+     > {
+     >     //윈도우 생성
+     >     var wnd = new AWindow('open-window');
+     >     
+     >     //윈도우 오픈 viewUrl, parent, left, top, width, height
+     >     wnd.open('Source/Views/WinView.lay', this.getContainer(), 10, 10, 300, 300);
+     >
+     > };
+     > ```
+   * 위는 일반적인 윈도우 오픈 방식입니다. 먼저 윈도우를 생성하고 open 메소드를 이용해서 윈도우를 오픈합니다.
+
+7. MainView에 "클릭해보세요" 버튼에 Click 이벤트를 설정하고 설정 함수는 다음과 같이 수정합니다.
+
+   * > ```js
+     > function MainView:onAButton2Click(comp, info, e)
+     > {
+     >
+     >     AToast.show('클릭!!!');
+     >
+     > };
+     > ```
+
+8. F5 키로 프로젝트를 빌드하고 실행합니다.
+
+   * ![](/assets/win-ex-007.png)
+
+9. MainView에서 "Window Open \(Modal\)" 버튼에 클릭 이벤트를 설정하고 설정 함수는 다음과 같이 수정합니다.
+
+   * > ```js
+     > //Window Open (Modal)
+     > function MainView:onAButton3Click(comp, info, e)
+     > {
+     >     //윈도우 생성
+     >     var wnd = new AWindow('dialog-window');        
+     >     
+     >     //다이얼로그 형식으로 오픈 viewUrl, parent, width, height
+     >     wnd.openAsDialog('Source/Views/WinView.lay', this.getContainer(), 300, 300);
+     >
+     > };
+     > ```
+
+10. F5 키로 프로젝트를 빌드하고 실행합니다.
+
+    * "Window Open \(Modal\)" 버튼을 클릭해서 윈도우를 오픈합니다.
+    * "클릭해보세요" 버튼을 클릭 해봅니다.  클릭이 되지 않아 메시지가 출력되지 않은걸 확인합니다.
+    * ![](/assets/win-ex-009.png)
+
+11. d
+
+12. d
+
+13. d
+
+14. d
+
+15. d
+
+16. d
+17. d
+18. d
+19. d
+20. d
+21. d
+22. d
+23. d
+24. d
+25. d
+26. d
+27. d
+28. d
+29. d
+30. d
+31. d
+32. d
+33. d
+34. d
+
+
+

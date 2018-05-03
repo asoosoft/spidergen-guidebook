@@ -1,0 +1,12 @@
+# 3.8.2. SpiderGen Prop
+
+---
+
+스파이더젠 옵션을 저장하는 기능 입니다.
+
+* **System **: 스파이더젠의 웍스페이스와 코드테마를 설정하는 기능입니다.
+  * **Workspace **: 스파이더젠에서 프로젝트를 생성 할때 기본적으로 저장되는 Workspace 위치를 설정하는 기능입니다.
+  * **Code Theme** : 스파이더젠의 코드 테마를 설정 할 수 있는 기능입니다.
+
+![](/assets/pop-spidergenpro-system.png)
+
