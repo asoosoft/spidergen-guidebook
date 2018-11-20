@@ -16,7 +16,7 @@
 
 고객의 다양한 요구를 충족시킬 수 있는 반응형 레이아웃 및 반응형 테마를 손쉽게 구현할 수 있어, 빠르게 변화하는 고객의 요구에 대한 대응이 용이합니다.
 
-![](https://github.com/asoosoft/spidergen-guidebook/tree/eeac9656bff5b368e79bf9dad544cae218642e17/assets/img1002.png)
+![](.gitbook/assets/img1002.png)
 
 ## 쉽고 강력한 통합 플랫폼 편집기
 
